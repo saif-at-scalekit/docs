@@ -219,7 +219,7 @@
                 {
                   "group": "Tools",
                   "pages": [
-                    "langsmith/polly",
+                    "langsmith/assistant",
                     "langsmith/langsmith-cli",
                     "langsmith/skills",
                     {
@@ -272,7 +272,7 @@
                 "langsmith/observability-quickstart",
                 "langsmith/observability-concepts",
                 "langsmith/observability-llm-tutorial",
-                "langsmith/polly-observability",
+                "langsmith/assistant-observability",
                 {
                   "group": "Tracing setup",
                   "pages": [
@@ -458,7 +458,7 @@
                 "langsmith/evaluation-quickstart",
                 "langsmith/evaluation-concepts",
                 "langsmith/evaluation-approaches",
-                "langsmith/polly-evaluation",
+                "langsmith/assistant-evaluation",
                 {
                   "group": "Datasets",
                   "pages": [
@@ -615,7 +615,7 @@
                 "langsmith/prompt-engineering",
                 "langsmith/prompt-engineering-quickstart",
                 "langsmith/prompt-engineering-concepts",
-                "langsmith/polly-prompt-engineering",
+                "langsmith/assistant-prompt-engineering",
                 "langsmith/playground-model-providers",
                 {
                   "group": "Create and update prompts",
@@ -1967,6 +1967,22 @@
     }
   },
   "redirects": [
+    {
+      "source": "/langsmith/polly",
+      "destination": "/langsmith/assistant"
+    },
+    {
+      "source": "/langsmith/polly-observability",
+      "destination": "/langsmith/assistant#observability"
+    },
+    {
+      "source": "/langsmith/polly-prompt-engineering",
+      "destination": "/langsmith/assistant#prompt-engineering"
+    },
+    {
+      "source": "/langsmith/polly-evaluation",
+      "destination": "/langsmith/assistant#evaluation"
+    },
     {
       "source": "/langsmith/prebuilt-evaluators",
       "destination": "/langsmith/evaluators"

@@ -16,7 +16,7 @@ In addition to the base [LangSmith](/langsmith/self-hosted) platform, you can en
 
 - **[Insights](/langsmith/insights)** provides AI-powered analysis of your traces and application data within LangSmith.
 
-- **[Assistant](/langsmith/polly)** provides an AI assistant embedded in your LangSmith workspace to help you analyze traces, threads, prompts, and experiment results.
+- **[Assistant](/langsmith/assistant)** provides an AI assistant embedded in your LangSmith workspace to help you analyze traces, threads, prompts, and experiment results.
 
 <Info>
 These features require an [Enterprise](https://langchain.com/pricing) plan. [Get a demo](https://www.langchain.com/contact-sales) to learn more.
@@ -173,6 +173,7 @@ We recommend storing each key in a predefined Kubernetes secret rather than sett
         insights:
           enabled: true
 
+        # Assistant (formerly Polly)
         polly:
           enabled: true
 
@@ -197,7 +198,7 @@ We recommend storing each key in a predefined Kubernetes secret rather than sett
 
         polly:
           enabled: true
-          encryptionKey: "<polly-encryption-key>"
+          encryptionKey: "<assistant-encryption-key>"
 
         agentBuilderToolServer:
           enabled: true
