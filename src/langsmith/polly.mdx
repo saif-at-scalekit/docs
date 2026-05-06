@@ -1,16 +1,16 @@
 ---
-title: LangSmith Polly
-sidebarTitle: Polly AI assistant
+title: LangSmith Assistant
+sidebarTitle: Assistant
 icon: "feather"
 ---
 
 import secret from '/snippets/langsmith/set-workspace-secrets.mdx';
 
-**LangSmith Polly** is an AI assistant embedded directly in your LangSmith [workspace](/langsmith/administration-overview#workspaces) to help you analyze and understand your application data.
+**LangSmith Assistant** is an AI assistant embedded directly in your LangSmith [workspace](/langsmith/administration-overview#workspaces) to help you analyze and understand your application data.
 
-Polly helps you gain insight from your traces, conversation threads, and prompts without having to dig through data manually. By asking natural language questions, you can quickly understand agent performance, debug issues, and analyze user sentiment.
+The Assistant helps you gain insight from your traces, conversation threads, and prompts without having to dig through data manually. By asking natural language questions, you can quickly understand agent performance, debug issues, and analyze user sentiment.
 
-<img src="/images/brand/polly-icon.png" alt="LangSmith Polly icon" style={{float: 'left', marginRight: '20px', marginTop: '-1px', marginBottom: '20px', maxWidth: '100px'}} /> Polly appears in the right-hand bottom corner of the following locations within [LangSmith UI](https://smith.langchain.com):
+<img src="/images/brand/polly-icon.png" alt="LangSmith Assistant icon" style={{float: 'left', marginRight: '20px', marginTop: '-1px', marginBottom: '20px', maxWidth: '100px'}} /> The Assistant appears in the right-hand bottom corner of the following locations within [LangSmith UI](https://smith.langchain.com):
 
 <br></br><br></br>**Observability & Debugging:**
 - [Projects](#projects): Browse and filter runs across a project.
@@ -30,18 +30,18 @@ Polly helps you gain insight from your traces, conversation threads, and prompts
 <img
 className="block dark:hidden"
 src="/langsmith/images/polly-datasets-light.png"
-alt="Polly chat in the sidebar on a dataset view."
+alt="Assistant chat in the sidebar on a dataset view."
 />
 
 <img
 className="hidden dark:block"
 src="/langsmith/images/polly-datasets-dark.png"
-alt="Polly chat in the sidebar on a dataset view."
+alt="Assistant chat in the sidebar on a dataset view."
 />
 
 ## Get started
 
-Before you start using Polly, you need to add an API key for the model you're using:
+Before you start using the Assistant, you need to add an API key for the model you're using:
 
 <secret/>
 
@@ -51,7 +51,7 @@ Polly calls model providers from LangSmith's egress IP addresses. If your model 
 
 ### Supported models
 
-Polly supports the following model providers out of the box:
+The Assistant supports the following model providers out of the box:
 
 - Anthropic (Claude)
 - OpenAI
@@ -63,20 +63,20 @@ Polly supports the following model providers out of the box:
 - DeepSeek
 - Fireworks AI
 
-You can also use any custom model you've configured in [Playground Settings](/langsmith/prompt-engineering-concepts#playground) by enabling the **Available in Polly** toggle on that configuration. Workspace admins manage which custom models are available.
+You can also use any custom model you've configured in [Playground Settings](/langsmith/prompt-engineering-concepts#playground) by enabling the **Available in Assistant** toggle on that configuration. Workspace admins manage which custom models are available.
 
 ### Keyboard shortcuts
 
 | Action | Mac | Windows/Linux |
 |---|---|---|
-| Toggle Polly open/closed | `Cmd+I` | `Ctrl+I` |
+| Toggle Assistant open/closed | `Cmd+I` | `Ctrl+I` |
 | Clear current thread | `Cmd+Shift+O` | `Ctrl+Shift+O` |
 
 ## Observability
 
 ### Projects
 
-On a project's run list, Polly can browse and filter runs across the entire project, create datasets, and add examples. Use Polly to quickly explore what's happening across your traces without manually paging through results.
+On a project's run list, the Assistant can browse and filter runs across the entire project, create datasets, and add examples. Use the Assistant to quickly explore what's happening across your traces without manually paging through results.
 
 **Example questions:**
 - "Show me all the failed runs from the last 24 hours"
@@ -86,7 +86,7 @@ On a project's run list, Polly can browse and filter runs across the entire proj
 
 ### Trace pages
 
-On an individual [trace](/langsmith/observability-concepts#traces), Polly analyzes the [run](/langsmith/observability-concepts#runs) data and execution trajectory. Polly examines the full trace context, including [run metadata](/langsmith/observability-concepts#metadata), inputs, outputs, intermediate steps, and configuration to help you understand what happened and identify areas for improvement.
+On an individual [trace](/langsmith/observability-concepts#traces), the Assistant analyzes the [run](/langsmith/observability-concepts#runs) data and execution trajectory. The Assistant examines the full trace context, including [run metadata](/langsmith/observability-concepts#metadata), inputs, outputs, intermediate steps, and configuration to help you understand what happened and identify areas for improvement.
 
 **Example questions:**
 - "Is there anything that the agent could have done better here?"
@@ -96,7 +96,7 @@ On an individual [trace](/langsmith/observability-concepts#traces), Polly analyz
 
 ### Thread views
 
-Under the **Threads** tab, Polly analyzes conversation [threads](/langsmith/observability-concepts#threads) to help you understand user sentiment, conversation outcomes, and interaction patterns. Use Polly to identify user pain points and understand whether issues were resolved.
+Under the **Threads** tab, the Assistant analyzes conversation [threads](/langsmith/observability-concepts#threads) to help you understand user sentiment, conversation outcomes, and interaction patterns. Use the Assistant to identify user pain points and understand whether issues were resolved.
 
 **Example questions:**
 - "Did the user seem frustrated?"
@@ -108,7 +108,7 @@ Under the **Threads** tab, Polly analyzes conversation [threads](/langsmith/obse
 
 ### Playground
 
-In the [Playground](/langsmith/prompt-engineering-concepts#playground), Polly helps you edit and optimize your [prompts](/langsmith/prompt-engineering-concepts#prompts-in-langsmith). Use automated options like **Optimize prompt**, **Generate a tool**, or **Generate an output schema**, or give Polly custom instructions for editing your prompt. Polly can directly modify the playground state—updating messages, tools, output schemas, and examples—so you can iterate on prompts conversationally.
+In the [Playground](/langsmith/prompt-engineering-concepts#playground), the Assistant helps you edit and optimize your [prompts](/langsmith/prompt-engineering-concepts#prompts-in-langsmith). Use automated options like **Optimize prompt**, **Generate a tool**, or **Generate an output schema**, or give the Assistant custom instructions for editing your prompt. The Assistant can directly modify the playground state—updating messages, tools, output schemas, and examples—so you can iterate on prompts conversationally.
 
 **Example questions:**
 - "Make it respond in Italian"
@@ -118,7 +118,7 @@ In the [Playground](/langsmith/prompt-engineering-concepts#playground), Polly he
 
 ### Prompt Hub pages
 
-When viewing a prompt in the [LangSmith Hub](/langsmith/prompt-engineering-concepts#prompts-in-langsmith), Polly helps you understand the prompt's structure, messages, tools, and configuration. This is useful for exploring and learning from shared prompts.
+When viewing a prompt in the [LangSmith Hub](/langsmith/prompt-engineering-concepts#prompts-in-langsmith), the Assistant helps you understand the prompt's structure, messages, tools, and configuration. This is useful for exploring and learning from shared prompts.
 
 **Example questions:**
 - "What does this prompt do?"
@@ -130,7 +130,7 @@ When viewing a prompt in the [LangSmith Hub](/langsmith/prompt-engineering-conce
 
 ### Dataset Experiments
 
-On the **Datasets** page under the **Experiments** tab, Polly analyzes experiment results and helps you compare runs across different experiments. Polly can identify patterns, summarize performance, and help you understand which approaches work best.
+On the **Datasets** page under the **Experiments** tab, the Assistant analyzes experiment results and helps you compare runs across different experiments. The Assistant can identify patterns, summarize performance, and help you understand which approaches work best.
 
 **Example questions:**
 - "Which experiment performed best?"
@@ -140,7 +140,7 @@ On the **Datasets** page under the **Experiments** tab, Polly analyzes experimen
 
 ### Dataset Examples
 
-On the **Datasets** page under the **Examples** tab, Polly helps you understand your dataset structure, browse examples, and identify data patterns. This is useful for understanding what data you're working with and preparing datasets for experiments.
+On the **Datasets** page under the **Examples** tab, the Assistant helps you understand your dataset structure, browse examples, and identify data patterns. This is useful for understanding what data you're working with and preparing datasets for experiments.
 
 **Example questions:**
 - "What type of data is in this dataset?"
@@ -150,7 +150,7 @@ On the **Datasets** page under the **Examples** tab, Polly helps you understand 
 
 ### Annotation Queues
 
-In **Annotation Queues**, Polly helps you analyze runs before making annotation decisions. Whether you're reviewing runs individually or comparing them pairwise, Polly provides insights into run behavior, errors, and execution patterns to inform your scoring.
+In **Annotation Queues**, the Assistant helps you analyze runs before making annotation decisions. Whether you're reviewing runs individually or comparing them pairwise, the Assistant provides insights into run behavior, errors, and execution patterns to inform your scoring.
 
 **Example questions:**
 - "What went wrong in this run?"
@@ -160,7 +160,7 @@ In **Annotation Queues**, Polly helps you analyze runs before making annotation 
 
 ### Evaluators
 
-In the **Evaluators** builder, Polly helps you write and refine evaluator logic. Polly can generate evaluator code, suggest improvements, and help you test your evaluator against examples.
+In the **Evaluators** builder, the Assistant helps you write and refine evaluator logic. The Assistant can generate evaluator code, suggest improvements, and help you test your evaluator against examples.
 
 **Example questions:**
 - "Write an evaluator that checks for hallucinations"
@@ -170,7 +170,7 @@ In the **Evaluators** builder, Polly helps you write and refine evaluator logic.
 
 ## What's next
 
-Learn more about the features that Polly helps you explore:
+Learn more about the features that the Assistant helps you explore:
 
 <CardGroup cols={2}>
   <Card

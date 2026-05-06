@@ -2141,19 +2141,19 @@
     },
     {
       "source": "/langsmith/agent-builder-self-hosted",
-      "destination": "/langsmith/deploy-self-hosted-full-platform#enable-fleet-insights-and-polly"
+      "destination": "/langsmith/deploy-self-hosted-full-platform#enable-fleet-insights-and-assistant"
     },
     {
       "source": "/langsmith/fleet/self-hosted",
-      "destination": "/langsmith/deploy-self-hosted-full-platform#enable-fleet-insights-and-polly"
+      "destination": "/langsmith/deploy-self-hosted-full-platform#enable-fleet-insights-and-assistant"
     },
     {
       "source": "/langsmith/insights-self-hosted",
-      "destination": "/langsmith/deploy-self-hosted-full-platform#enable-fleet-insights-and-polly"
+      "destination": "/langsmith/deploy-self-hosted-full-platform#enable-fleet-insights-and-assistant"
     },
     {
       "source": "/langsmith/polly-self-hosted",
-      "destination": "/langsmith/deploy-self-hosted-full-platform#enable-fleet-insights-and-polly"
+      "destination": "/langsmith/deploy-self-hosted-full-platform#enable-fleet-insights-and-assistant"
     },
     {
       "source": "/labs/swe/:path*",
